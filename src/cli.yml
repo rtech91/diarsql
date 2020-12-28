@@ -1,0 +1,27 @@
+
+name: diarsql
+version: "1.0"
+author: Andrew [R-Tech] <in0mad91@gmail.com>
+about: Generate SQL database schema from Dia database diagram
+args:
+  - from-dia:
+      short: f
+      long: from-dia
+      value_name: FILE
+      help: Sets a Dia database diagram file
+      takes_value: true
+      required: true
+  - to-sql:
+      short: t
+      long: to-sql
+      value_name: FILE
+      help: Sets filepath to the generated SQL file
+      takes_value: true
+      required: true
+  - db-system:
+      short: d
+      long: db-system
+      value_name: DB_SYSTEM
+      help: Sets database system for generated SQL syntax
+      takes_value: true
+      required: false
