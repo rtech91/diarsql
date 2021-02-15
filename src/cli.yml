@@ -19,7 +19,7 @@ args:
       takes_value: true
       required: true
   - db-system:
-      short: d
+      short: s
       long: db-system
       value_name: DB_SYSTEM
       default_value: mysql
