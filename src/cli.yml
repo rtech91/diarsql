@@ -8,20 +8,21 @@ args:
       short: f
       long: from-dia
       value_name: FILE
-      help: Sets a Dia database diagram file
+      help: Path to *.dia file
       takes_value: true
       required: true
   - to-sql:
       short: t
       long: to-sql
       value_name: FILE
-      help: Sets filepath to the generated SQL file
+      help: Path to future *.sql file
       takes_value: true
       required: true
   - db-system:
       short: d
       long: db-system
       value_name: DB_SYSTEM
-      help: Sets database system for generated SQL syntax
+      default_value: mysql
+      help: "Database system name (mysql, postgresql, sqlite, .etc)"
       takes_value: true
-      required: false
+      required: true
